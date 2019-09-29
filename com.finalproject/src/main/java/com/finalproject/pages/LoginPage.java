@@ -40,13 +40,13 @@ public class LoginPage extends BaseClass {
 		System.out.println("Testing====================");
 		
 		//moving to login username and password pop - up
-		action.moveToElement(username).click().sendKeys("msizi.ndlela5@gmail.com");
+		action.moveToElement(username).click().sendKeys("username");
 		
 		try { Thread.sleep(2000);
 		} catch (InterruptedException e) {e.printStackTrace();}
 		action.build().perform();
 		
-		action.moveToElement(password).click().sendKeys("Msizi67494!");
+		action.moveToElement(password).click().sendKeys("password");
 		
 		try { Thread.sleep(2000);
 		} catch (InterruptedException e) {e.printStackTrace();}
