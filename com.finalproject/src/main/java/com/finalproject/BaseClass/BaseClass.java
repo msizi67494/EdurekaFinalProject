@@ -1,5 +1,7 @@
 package com.finalproject.BaseClass;
 
+
+
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
@@ -14,7 +16,8 @@ public class BaseClass {
         if (driver != null) {
             return driver;
         }
-        System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/chromedriver.exe");
+        //System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver","C:\\Users\\NdlelaM1\\Desktop\\selenium\\chromedriver.exe");
         driver = new ChromeDriver();
         return driver;
     }
@@ -24,16 +27,16 @@ public class BaseClass {
 	
 		
 		getDriver().manage().window().maximize();
-//		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		getDriver().manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 //		driver.manage().deleteAllCookies();
 		
-		driver.get("https://edureka.co");
+		getDriver().get("https://edureka.co");
 		
 	}
 	
 	@AfterClass
 	public void closeBrowser() {
-		driver.quit();
+		getDriver().quit();
 	}
 	
 	public static void logoutFromPortal() {

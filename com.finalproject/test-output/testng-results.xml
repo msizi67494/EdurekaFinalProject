@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-09-30T01:38:53 SAST" name="Default suite" finished-at="2019-09-30T01:39:51 SAST" duration-ms="58409">
+  <suite name="Default suite" duration-ms="41057" started-at="2019-09-30T16:30:49 CAT" finished-at="2019-09-30T16:31:30 CAT">
     <groups>
     </groups>
-    <test started-at="2019-09-30T01:38:53 SAST" name="Default test" finished-at="2019-09-30T01:39:51 SAST" duration-ms="58409">
-      <class name="com.finalproject.testcases.ValidaterUserEnrollementTest">
-        <test-method is-config="true" signature="setupBrowser()[pri:0, instance:com.finalproject.testcases.ValidaterUserEnrollementTest@6492fab5]" started-at="2019-09-30T01:38:53 SAST" name="setupBrowser" finished-at="2019-09-30T01:39:22 SAST" duration-ms="29042" status="PASS">
+    <test name="Default test" duration-ms="41057" started-at="2019-09-30T16:30:49 CAT" finished-at="2019-09-30T16:31:30 CAT">
+      <class name="com.finalproject.testcases.ListOfSeleniumBlogsTest">
+        <test-method status="PASS" signature="setupBrowser()[pri:0, instance:com.finalproject.testcases.ListOfSeleniumBlogsTest@5890e879]" name="setupBrowser" is-config="true" duration-ms="12193" started-at="2019-09-30T16:30:49 CAT" finished-at="2019-09-30T16:31:01 CAT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupBrowser -->
-        <test-method signature="validateUserEnrollment()[pri:0, instance:com.finalproject.testcases.ValidaterUserEnrollementTest@6492fab5]" started-at="2019-09-30T01:39:22 SAST" name="validateUserEnrollment" finished-at="2019-09-30T01:39:50 SAST" duration-ms="28351" status="PASS">
+        <test-method status="PASS" signature="ListSeleniumBlogs()[pri:0, instance:com.finalproject.testcases.ListOfSeleniumBlogsTest@5890e879]" name="ListSeleniumBlogs" duration-ms="27306" started-at="2019-09-30T16:31:02 CAT" finished-at="2019-09-30T16:31:29 CAT">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validateUserEnrollment -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.finalproject.testcases.ValidaterUserEnrollementTest@6492fab5]" started-at="2019-09-30T01:39:50 SAST" name="closeBrowser" finished-at="2019-09-30T01:39:51 SAST" duration-ms="897" status="PASS">
+        </test-method> <!-- ListSeleniumBlogs -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.finalproject.testcases.ListOfSeleniumBlogsTest@5890e879]" name="closeBrowser" is-config="true" duration-ms="1243" started-at="2019-09-30T16:31:29 CAT" finished-at="2019-09-30T16:31:30 CAT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-      </class> <!-- com.finalproject.testcases.ValidaterUserEnrollementTest -->
+      </class> <!-- com.finalproject.testcases.ListOfSeleniumBlogsTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
