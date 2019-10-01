@@ -1,5 +1,7 @@
 package com.finalproject.testcases;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import org.openqa.selenium.JavascriptExecutor;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -15,7 +17,7 @@ public class ValidaterUserEnrollementTest extends BaseClass {
 	Boolean verifyCourse;
 	Boolean expected = true;
 
-	@Test
+	@Test(alwaysRun = true)
 	public void validateUserEnrollment() {
 		loginPage.LoginToPortal();
 		((JavascriptExecutor)getDriver()).executeScript("window.scroll(0,300)");
@@ -36,7 +38,7 @@ public class ValidaterUserEnrollementTest extends BaseClass {
 		}
 		System.out.println(verifyCourse);
 
-		Assert.assertEquals(verifyCourse, expected);
+		AssertJUnit.assertEquals(verifyCourse, expected);
 		homePage.Logout();
 	}
 

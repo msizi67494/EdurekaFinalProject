@@ -1,5 +1,6 @@
 package com.finalproject.testcases;
 
+import org.testng.annotations.Test;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
 
@@ -14,7 +15,7 @@ public class UpdateUserProfileTest extends BaseClass {
 	MyProfile profile = new MyProfile();
 	Actions action = new Actions(getDriver());
 	
-	@Test(priority = 0)
+	@Test(alwaysRun = true)
 	public void editProfile() throws InterruptedException {
 		loginPage.LoginToPortal();
 		homePage.NavigateToMyProfile();
@@ -24,7 +25,9 @@ public class UpdateUserProfileTest extends BaseClass {
 		Thread.sleep(3000);
 		
 		profile.getUserName().sendKeys("Msizi Sakhile Ndlela");
+		Thread.sleep(3000);
 		profile.getCurrentRole().sendKeys("Software Quality Assurannce Enthusiast");
+		Thread.sleep(3000);
 	}
 	
 //	@Test(priority = 1)

@@ -1,5 +1,7 @@
 package com.finalproject.testcases;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import java.util.ArrayList;
 
 import org.openqa.selenium.JavascriptExecutor;
@@ -19,7 +21,7 @@ public class ListOfSeleniumBlogsTest extends BaseClass {
 	HomePage homePage = new HomePage();
 	Actions action = new Actions(getDriver());
 
-	@Test
+	@Test(alwaysRun = true)
 	public void ListSeleniumBlogs() {
 
 		loginPage.LoginToPortal();
@@ -47,7 +49,7 @@ public class ListOfSeleniumBlogsTest extends BaseClass {
 		String actualTitle = getDriver().getTitle();
 		String expectedTitle = "Top Test Automation Interview Questions and Answers | Edureka";
 
-		Assert.assertEquals(actualTitle, expectedTitle);
+		AssertJUnit.assertEquals(actualTitle, expectedTitle);
 
 		// driver.close();
 		driver.switchTo().defaultContent();

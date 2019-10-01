@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Final Project Suite">
-  <test thread-count="5" name="Testing Edureka Portal">
-    <packages>
-      <package name="com.finalproject.testcases"/>
-    </packages>
-  </test> <!-- Testing Edureka Portal -->
-</suite> <!-- Final Project Suite -->
+<suite parallel="classes" name="Suite">
+  <test thread-count="5" parallel="classes" name="Test">
+    <classes>
+      <class name="com.finalproject.testcases.ListOfSeleniumBlogsTest"/>
+      <class name="com.finalproject.testcases.ValidaterUserEnrollementTest"/>
+      <class name="com.finalproject.testcases.UpdateUserProfileTest"/>
+      <class name="com.finalproject.testcases.AddSeleniumToWishListTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

@@ -16,8 +16,8 @@ public class BaseClass {
         if (driver != null) {
             return driver;
         }
-        //System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/chromedriver.exe");
-        System.setProperty("webdriver.chrome.driver","C:\\Users\\NdlelaM1\\Desktop\\selenium\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/chromedriver.exe");
+        //System.setProperty("webdriver.chrome.driver","C:\\Users\\NdlelaM1\\Desktop\\selenium\\chromedriver.exe");
         driver = new ChromeDriver();
         return driver;
     }

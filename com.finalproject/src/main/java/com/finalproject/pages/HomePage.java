@@ -39,6 +39,7 @@ public class HomePage extends BaseClass {
 	public WebElement getVerificationText() {
 		return verificationText;
 	}
+	
 
 	public void Logout() {
 

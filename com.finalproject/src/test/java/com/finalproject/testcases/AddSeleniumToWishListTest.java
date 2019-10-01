@@ -1,5 +1,7 @@
 package com.finalproject.testcases;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.interactions.Actions;
@@ -17,7 +19,7 @@ public class AddSeleniumToWishListTest extends BaseClass {
 	AllCoursesPage allCourses = new AllCoursesPage();
 	Actions action = new Actions(getDriver());
 
-	@Test
+	@Test(alwaysRun = true)
 	public void verifySeleniumCourseAddedToWishListTest() {
 		loginPage.LoginToPortal();
 		try {
@@ -72,6 +74,6 @@ public class AddSeleniumToWishListTest extends BaseClass {
 		getDriver().navigate().to("https://learning.edureka.co/mycourses");
 		homePage.Logout();
 		String actualText = "Your search \"favourite\" did not match any courses";
-		Assert.assertEquals(actualText, expectedText, "The course was not added to wishlist");
+		AssertJUnit.assertEquals(actualText, expectedText, "The course was not added to wishlist");
 	}
 }
