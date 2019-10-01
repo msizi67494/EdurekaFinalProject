@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Final Project Suite]">
+  <test thread-count="5" name="Testing Edureka Portal(failed)">
+    <classes>
+      <class name="com.finalproject.testcases.ValidaterUserEnrollementTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="validateUserEnrollment"/>
+          <include name="setupBrowser"/>
+        </methods>
+      </class> <!-- com.finalproject.testcases.ValidaterUserEnrollementTest -->
+    </classes>
+  </test> <!-- Testing Edureka Portal(failed) -->
+</suite> <!-- Failed suite [Final Project Suite] -->

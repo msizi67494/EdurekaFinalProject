@@ -25,9 +25,8 @@ public class BaseClass {
 	@BeforeClass
 	public static void setupBrowser() {
 	
-		
 		getDriver().manage().window().maximize();
-		getDriver().manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		getDriver().manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 //		driver.manage().deleteAllCookies();
 		
 		getDriver().get("https://edureka.co");
@@ -39,8 +38,5 @@ public class BaseClass {
 		getDriver().quit();
 	}
 	
-	public static void logoutFromPortal() {
-		
-	}
 	
 }

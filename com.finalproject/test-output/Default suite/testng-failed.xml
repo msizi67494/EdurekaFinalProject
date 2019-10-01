@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.finalproject.testcases.ListOfSeleniumBlogsTest">
+      <class name="com.finalproject.testcases.UpdateUserProfileTest">
         <methods>
           <include name="closeBrowser"/>
+          <include name="editProfile"/>
           <include name="setupBrowser"/>
-          <include name="ListSeleniumBlogs"/>
         </methods>
-      </class> <!-- com.finalproject.testcases.ListOfSeleniumBlogsTest -->
+      </class> <!-- com.finalproject.testcases.UpdateUserProfileTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
